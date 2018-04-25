@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myApp">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title ng-controller="parametrosCtrl">{{parametros.titulo}}</title>
+    <link ng-controller="parametrosCtrl" rel="shortcut icon" type="image/png" href="./src/img/ico.png" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="./src/estilos/style.css">
+
+    <script src="./node_modules/angular/angular.js"></script>
+    
+    <script src="./node_modules/angular-cookies/angular-cookies.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/angular-md5/angular-md5.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+    <script src="node_modules/angular-bootstrap-datetimepicker/src/js/datetimepicker.templates.js"></script>
+    <script src="./node_modules/ng-file-upload/dist/ng-file-upload-all.min.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/angular-bootstrap-datetimepicker/src/css/datetimepicker.css" />
+
+
+
+    <script src="./node_modules/angular-carousel/dist/angular-carousel.js"></script>
+    <script src="./node_modules/angular-touch/angular-touch.js"></script>
+    <link rel="stylesheet" href="node_modules/angular-carousel/dist/angular-carousel.css" />
+
+    <script src="./node_modules/bootstrap-fileinput/js/plugins/piexif.min.js"></script>
+    <script src="./node_modules/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="./node_modules/bootstrap-fileinput/themes/fa/theme.js"></script>
+
+
+
+    <script src="./node_modules/ng-scroll/ng-scroll.js"></script>
+
+
+    <!-- <script src = "/ path / to / themes / fa / theme.js"> </ script> -->
+
+    <script src="./src/app.js"></script>
+    <script src="./src/js/js.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/nav/nav.css">
+    <script src="./src/nav/navCtrl.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/footer/footer.css">
+    <script src="./src/footer/footerCtrl.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="./src/login/login.css">
+    <script src="./src/login/loginCtrl.js"></script>
+    <script src="./src/login/loginFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/configuracion/configuracion.css">
+    <script src="./src/configuracion/configuracionCtrl.js"></script>
+    <script src="./src/configuracion/configuracionFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/nuevoProducto/nuevoProducto.css">
+    <script src="./src/nuevoProducto/nuevoProductoCtrl.js"></script>
+    <script src="./src/nuevoProducto/nuevoProductoFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/listaProductos/listaProductos.css">
+    <script src="./src/listaProductos/listaProductosCtrl.js"></script>
+    <script src="./src/listaProductos/listaProductosFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/listaUsuarios/listaUsuarios.css">
+    <script src="./src/listaUsuarios/listaUsuariosCtrl.js"></script>
+    <script src="./src/listaUsuarios/listaUsuariosFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/usuario/usuario.css">
+    <script src="./src/usuario/usuarioCtrl.js"></script>
+    <script src="./src/usuario/usuarioFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/producto/producto.css">
+    <script src="./src/producto/productoCtrl.js"></script>
+    <script src="./src/producto/productoFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/productos/productos.css">
+    <script src="./src/productos/productosCtrl.js"></script>
+    <script src="./src/productos/productosFact.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/parametros/parametros.css">
+    <script src="./src/parametros/parametrosCtrl.js"></script>
+    <script src="./src/parametros/parametrosFact.js"></script>
+
+
+    <!-- directivas -->
+    <script src="./src/directivas/desplegable/desplegable.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/directivas/desplegable/desplegable.css">
+
+    <link rel="stylesheet" type="text/css" href="./src/directivas/galeria/galeria.css">
+    <script src="./src/directivas/galeria/galeria.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/directivas/alert/alert.css">
+    <script src="./src/directivas/alert/alert.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/directivas/buscador/buscador.css">
+    <script src="./src/directivas/buscador/buscador.js"></script>
+
+
+    <script src="./src/directivas/atras/atras.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="./src/home/home.css">
+    <script src="./src/home/homeCtrl.js"></script>
+
+
+    <!-- vistas -->
+    <link rel="stylesheet" type="text/css" href="./src/vistas/vistas.css">
+
+
+
+
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,800,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <alert></alert>
+
+    <div ng-include src="'src/nav/nav.html'" data-ng-scroll-down="hola()"></div>
+
+    <div ng-view></div>
+
+    <footer>
+        <div class="texto">
+            <div>Miguel Merelli</div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
